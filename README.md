@@ -20,14 +20,15 @@ A simple password manager built with Python to securely store and manage your cr
 
     pip install -r requirements.txt
 
-Usage
+## Usage
 
 To run the password manager:
 
 python ui.py
 
 Follow the on-screen prompts to add, retrieve, or delete credentials.
-Project Structure
+
+## Project Structure
 
     backend.py: Handles the core functionality for managing passwords.
 
@@ -37,9 +38,6 @@ Project Structure
 
     __init__.py: Initializes the Python package.
 
-Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
-License
+## License
 
 This project is licensed under the MIT License.
