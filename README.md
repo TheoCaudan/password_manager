@@ -4,9 +4,10 @@ A simple password manager built with Python to securely store and manage your cr
 
 ## Features
 
-- Securely store usernames and passwords
-- Simple command-line interface (CLI)
-- Easy to set up and use
+- Easy-to-use graphical interface (Tkinter)
+- Securely store credentials (username/password)
+- Local SQLite database
+- Add, view, and delete entries
 
 ## Installation
 
@@ -22,6 +23,22 @@ A simple password manager built with Python to securely store and manage your cr
    pip install -r requirements.txt
    ```
 
+How It Works
+
+1. Database Setup:
+
+   - When first run, the app sets up a local SQLite database via db_setup.py to store credentials securely.
+
+2. User Interface:
+
+    - ui.py launches a Tkinter-based graphical window.
+
+    - You can input, view, or delete credentials with buttons and input fields.
+
+3. Backend Logic:
+
+    - The logic in backend.py handles the interaction between the GUI and the database (e.g., saving, retrieving, and deleting records).
+
 ## Usage
 
 To run the password manager:
@@ -29,19 +46,26 @@ To run the password manager:
    ```bash
    python ui.py
    ```
+This opens the password manager GUI. From there:
 
-Follow the on-screen prompts to add, retrieve, or delete credentials.
+- Enter service name, username, and password.
 
-## Project Structure
+- Click "Add" to save it.
 
-    backend.py: Handles the core functionality for managing passwords.
+- Use "View All" to see saved entries.
 
-    db_setup.py: Sets up the database for storing credentials.
+- Use "Delete" to remove any record.
 
-    ui.py: Provides the command-line interface for user interaction.
+## File Structure
 
-    __init__.py: Initializes the Python package.
+- backend.py: Handles the core functionality for managing passwords and interact with the database.
+
+- db_setup.py: Initializes SQLite database for storing credentials.
+
+- ui.py: Main graphical app.
+
+- __init__.py: Initializes the Python package.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. Use freely and modify as needed!
