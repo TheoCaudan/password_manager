@@ -15,16 +15,20 @@ A simple password manager built with Python to securely store and manage your cr
    ```bash
    git clone https://github.com/TheoCaudan/password_manager.git
    cd password_manager
+   ```
+2. Install the required dependencies:
 
-    Install the required dependencies:
-
-    pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
 To run the password manager:
 
-python ui.py
+   ```bash
+   python ui.py
+   ```
 
 Follow the on-screen prompts to add, retrieve, or delete credentials.
 
